@@ -88,13 +88,9 @@ class SalesmanController extends Controller
 
 
 
-
-
-
-
-    public function update()
+    public function update($id)
     {
-       
+        $valid_id = base64_decode($id);
         $model = new InvoiceModel();
      
         $name=$this->request->getVar('customer_name');
@@ -121,7 +117,7 @@ class SalesmanController extends Controller
 
           
   
-           $model->update($data);
+           $model->update($valid_id,$data);
    
         return redirect()->to(site_url('invoice'));
        

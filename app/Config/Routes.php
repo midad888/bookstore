@@ -55,6 +55,7 @@ $routes->get('/invoice', 'SalesmanController::index',['filter' => 'auth']);
 $routes->get('invoice/add', 'SalesmanController::add');
 $routes->post('invoice/create', 'SalesmanController::create');
 $routes->get('/invoice/edit/(:any)', 'SalesmanController::editInvoice/$1');
+$routes->post('/invoice/update/(:any)', 'SalesmanController::update/$1');
 $routes->get('/invoice/delete/(:any)', 'SalesmanController::deleteInvoice/$1');
 
 

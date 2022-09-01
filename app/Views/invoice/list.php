@@ -67,7 +67,7 @@
                                     <a href="<?php echo base_url("invoice/edit").'/'. base64_encode($value['invoice_no']); ?>">Edit</a>
                                   </td>
                                   <td>
-                                    <a  href="<?php echo base_url("invoice/delete").'/'. base64_encode($value['invoice_no']);  ?>">Delete</a>
+                                    <a  href="<?php echo base_url("invoice/delete").'/'. base64_encode($value['invoice_no']);  ?>">Cancel</a>
                                   </td>
                               </tr>
                           <?php 
