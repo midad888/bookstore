@@ -12,7 +12,7 @@
         
           <div class="card-body">
            <div class="row">
-              <div class="col-sm-9 mb-3" >
+              <div class="col-2 mb-3" >
                   <label class="form-label">Date</label>
                   <input class="form-control" id="date" name="date" placeholder="Select a date">
                 </div>
