@@ -121,7 +121,7 @@ class SalesmanController extends Controller
 
           
   
-           $model->insert($data);
+           $model->update($data);
    
         return redirect()->to(site_url('invoice'));
        
@@ -134,13 +134,13 @@ class SalesmanController extends Controller
        
         $valid_id = base64_decode($id);
         $model = new InvoiceModel();
-        $UpdatBook = $model->find($valid_id);  
+        $Updated = $model->find($valid_id);  
 
         $session = session();
         $data ['name']=$session->get('name');
         $roleName='Salesman';
         $data ['role']=$roleName;
-        $data['invoice'] = $UpdatBook;
+        $data['invoice'] = $Updated;
        
 
         echo view('invoice/update',$data);
